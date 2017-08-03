@@ -1,0 +1,16 @@
+﻿technologies that forum will use
+   1、Maven:Module management
+   2、Spring+Hibernate4+SpringMVC
+   3、Freemarker:pages
+   4、JQuery:Js
+   5、Ztree:tree
+   6、uplodify:uploading file
+   7、Ajax,Dwr
+1、Maven's modules
+   -basic-hibernate
+   -forum-core-->model,dao
+   -forum-user-->user,role,group
+   -forum-article-->channel,article
+   -forum-system-->link,backup,info
+   -forum-web-->web
+   -forum-parent
