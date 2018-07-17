@@ -1,0 +1,6 @@
+cdu\xeon\forum\service\GroupService.class
+cdu\xeon\forum\service\IGroupService.class
+cdu\xeon\forum\service\IRoleService.class
+cdu\xeon\forum\service\IUserService.class
+cdu\xeon\forum\service\RoleService.class
+cdu\xeon\forum\service\UserService.class

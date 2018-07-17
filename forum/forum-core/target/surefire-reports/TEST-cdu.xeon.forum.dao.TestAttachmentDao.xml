@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="0" name="cdu.xeon.forum.dao.TestAttachmentDao" time="40.919" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\projects\forum\forum-parent"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\projects\forum\forum-parent"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="F:\projects\forum\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3701231515408022036.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/Program Files/Java/jre1.8.0_131/bin/server;E:/Program Files/Java/jre1.8.0_131/bin;E:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Java\Subversion\bin;D:\svn\Subversion\bin;d:\CTEX\UserData\miktex\bin;d:\CTEX\MiKTeX\miktex\bin;d:\CTEX\CTeX\ctex\bin;d:\CTEX\CTeX\cct\bin;d:\CTEX\CTeX\ty\bin;d:\CTEX\Ghostscript\gs9.05\bin;d:\CTEX\GSview\gsview;d:\CTEX\WinEdt;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;d:\Program Files\Git\cmd;D:\Java\nexus\nexus-3.4.0-02\bin;D:\svn\Subversion\bin;D:\apache-maven-3.5.0\bin;D:\mysql\mysql-5.7.18-winx64\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;D:\Python27;;E:\Program Files (x86)\java\tools\sts-bundle\sts-3.9.0.RELEASE;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Australia/Darwin"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="/E:/Program Files (x86)/java/tools/sts-bundle/sts-3.9.0.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.8.0.20170516-2042/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s D:\Java\Maven\settings.xml clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="E:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;E:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;E:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;E:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;E:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;E:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;E:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;E:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\projects\forum\forum-parent\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testListIndexPic" time="5.492">
+    <error message="table.column=t_channel.custom_link_url value is empty but must contain a value (to disable this feature check, set DatabaseConfig.FEATURE_ALLOW_EMPTY_FIELDS to true)" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: table.column=t_channel.custom_link_url value is empty but must contain a value (to disable this feature check, set DatabaseConfig.FEATURE_ALLOW_EMPTY_FIELDS to true)
+	at org.dbunit.operation.AbstractBatchOperation.handleColumnHasNoValue(AbstractBatchOperation.java:260)
+	at org.dbunit.operation.AbstractBatchOperation.execute(AbstractBatchOperation.java:207)
+	at org.dbunit.operation.CompositeOperation.execute(CompositeOperation.java:79)
+	at cdu.xeon.basic.test.util.AbstractDbUnitTestCase.resumeTable(AbstractDbUnitTestCase.java:84)
+	at cdu.xeon.forum.dao.TestAttachmentDao.tearDown(TestAttachmentDao.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>Hibernate: select attachment0_.id as col_0_0_, attachment0_.new_name as col_1_0_, attachment0_.old_name as col_2_0_, attachment0_.type as col_3_0_, attachment0_.suffix as col_4_0_, attachment0_.size as col_5_0_, attachment0_.is_index_pic as col_6_0_, attachment0_.is_img as col_7_0_, attachment0_.is_attach as col_8_0_, attachment0_.tid as col_9_0_, topic1_.title as col_10_0_, topic1_.publish_date as col_11_0_, topic1_.author as col_12_0_ from t_attachment attachment0_, t_topic topic1_ where attachment0_.tid=topic1_.id and attachment0_.is_index_pic=? and topic1_.status=1 and attachment0_.is_img=1 limit ?
+----------------------Attachment [id=7, newName=bb7, oldName=aa7, type=gif, suffix=gif, size=123, isIndexPic=1, isImg=1, topic=Topic [id=4, title=dededede1], isAttach=0]--------------------
+23:06:01,232 ERROR AbstractBatchOperation:258 - execute: table.column=t_channel.custom_link_url value is empty but must contain a value (to disable this feature check, set DatabaseConfig.FEATURE_ALLOW_EMPTY_FIELDS to true)
+</system-out>
+    <system-err>Sat Apr 28 23:05:55 ACST 2018 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sat Apr 28 23:05:58 ACST 2018 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+</system-err>
+  </testcase>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testFindNoUseAttachment" time="4.545"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testListAllPic" time="4.42"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testListAttachByTopic" time="4.377"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testListByTopic" time="4.64"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testFindChannelPic" time="4.898"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testClearNoUseAttachment" time="4.31"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testFindNoUseNum" time="4.094"/>
+  <testcase classname="cdu.xeon.forum.dao.TestAttachmentDao" name="testDeleteByTopic" time="4.143"/>
+</testsuite>

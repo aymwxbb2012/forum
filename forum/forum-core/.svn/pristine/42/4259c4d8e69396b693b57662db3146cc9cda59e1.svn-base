@@ -1,0 +1,65 @@
+package cdu.xeon.forum.dao;
+
+
+import java.util.List;
+
+import cdu.xeon.basic.dao.IBaseDao;
+import cdu.xeon.basic.model.Pager;
+import cdu.xeon.forum.model.Topic;
+
+public interface ITopicDao extends IBaseDao<Topic>{
+	/**
+	 * Search for articles by column and title and status
+	 * @param cid
+	 * @param title
+	 * @return
+	 */
+	public Pager<Topic> find(Integer cid,String title,Integer status);
+	/**
+	 * Search by user, column, title, and state
+	 * @param uid
+	 * @param cid
+	 * @param title
+	 * @return
+	 */
+	public Pager<Topic> find(Integer uid,Integer cid,String title,Integer status);
+	/**
+	 * The search for articles based on keywords
+	 * @param keyword
+	 * @return
+	 */
+	public Pager<Topic> searchTopicByKeyword(String keyword);
+	/**
+	 * The condition is retrieved by a condition that is retrieved in the title, content, and summary
+	 * @param con
+	 * @return
+	 */
+	public Pager<Topic> searchTopic(String con);
+	/**
+	 * To retrieve a column's recommendation, if cid is empty, it means to retrieve all the articles
+	 * @param ci
+	 * @return
+	 */
+	public Pager<Topic> findRecommendTopic(Integer ci);
+	/**
+	 * Get the articles in this column according to the number of articles and column
+	 * @param cid
+	 * @param num
+	 * @return
+	 */
+	public List<Topic> listTopicByChannelAndNumber(int cid,int num);
+	
+	public List<Topic> listTopicsByChannel(int cid);
+	/**
+	 * Determine whether the column that adds the article needs to be updated
+	 * @param cid
+	 * @return
+	 */
+	public boolean isUpdateIndex(int cid);
+	/**
+	 * Get the latest available articles in a column
+	 * @param cid
+	 * @return
+	 */
+	public Topic loadLastedTopicByColumn(int cid);
+}

@@ -1,0 +1,16 @@
+cdu\xeon\forum\service\AnswerService.class
+cdu\xeon\forum\service\IChannelService.class
+cdu\xeon\forum\service\IAttachmentService.class
+cdu\xeon\forum\service\IQuestionService.class
+cdu\xeon\forum\service\IndexPicService.class
+cdu\xeon\forum\service\AttachmentService.class
+cdu\xeon\forum\service\ForumLinkService.class
+cdu\xeon\forum\service\IKeywordService.class
+cdu\xeon\forum\service\ITopicService.class
+cdu\xeon\forum\service\TopicService.class
+cdu\xeon\forum\service\IForumLinkService.class
+cdu\xeon\forum\service\KeywordService.class
+cdu\xeon\forum\service\ChannelService.class
+cdu\xeon\forum\service\IIndexPicService.class
+cdu\xeon\forum\service\QuestionService.class
+cdu\xeon\forum\service\IAnswerService.class

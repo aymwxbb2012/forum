@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+   <groupId>cdu.xeon.forum</groupId>
+  <artifactId>forum-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <relativePath>../forum-parent/pom.xml</relativePath>
+  </parent>
+  
+  <artifactId>forum-web</artifactId>
+  <packaging>war</packaging>
+  <name>forum-web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <dependencies>
+    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	    </dependency>
+	    <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		
+		<dependency>
+		  <groupId>javax.servlet</groupId>
+		  <artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+		</dependency>
+		 <dependency>
+	    	<groupId>${project.groupId}</groupId>
+	    	<artifactId>forum-core</artifactId>
+	    </dependency>
+
+        <dependency>
+	    	<groupId>${project.groupId}</groupId>
+	    	<artifactId>forum-user</artifactId>
+	    </dependency>
+	    
+	     <dependency>
+	    	<groupId>${project.groupId}</groupId>
+	    	<artifactId>forum-question</artifactId>
+	    </dependency>
+	    <dependency>
+	      <groupId>cdu.xeon.basic</groupId>
+	      <artifactId>basic-common</artifactId>
+	    </dependency>
+	    <dependency>
+		  <groupId>jsptags</groupId>
+		  <artifactId>pager-taglib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.directwebremoting</groupId>
+			<artifactId>dwr</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.samba.jcifs</groupId>
+			<artifactId>jcifs</artifactId>
+		</dependency>
+		
+  </dependencies>
+  <build>
+    <finalName>forum-web</finalName>
+    <plugins>
+			  <plugin>
+				  <groupId>org.mortbay.jetty</groupId>
+				  <artifactId>jetty-maven-plugin</artifactId>
+				  <configuration>
+				    <scanIntervalSeconds>10</scanIntervalSeconds>
+				    <webApp>
+				      <contextPath>/forum</contextPath>
+				    </webApp>
+				    <connectors>
+				       <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+				          <port>8888</port>
+				          <maxIdleTime>60000</maxIdleTime>
+				       </connector>
+				     </connectors>
+				  </configuration>
+				</plugin>
+		</plugins>
+  </build>
+</project>

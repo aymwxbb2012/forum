@@ -1,0 +1,8 @@
+cdu\xeon\basic\test\util\EntitiesHelper.class
+cdu\xeon\basic\test\util\DbUtil.class
+cdu\xeon\basic\dao\UserDao.class
+cdu\xeon\forum\basic_hibernate\AppTest.class
+cdu\xeon\basic\dao\IUserDao.class
+cdu\xeon\basic\dao\TestUserDao.class
+cdu\xeon\basic\test\util\AbstractDbUnitTestCase.class
+cdu\xeon\basic\model\User.class

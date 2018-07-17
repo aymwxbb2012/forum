@@ -1,0 +1,54 @@
+package cdu.xeon.forum.dao;
+
+import java.util.List;
+
+import cdu.xeon.basic.dao.IBaseDao;
+import cdu.xeon.basic.model.Pager;
+import cdu.xeon.forum.model.Answer;
+
+
+public interface IAnswerDao extends IBaseDao<Answer> {
+	/**
+	 * Search for articles by column and title and status
+	 * @param cid
+	 * @param title
+	 * @return
+	 */
+	public Pager<Answer> find(Integer qid);
+	/**
+	 * Search by user, column, title, and state
+	 * @param uid
+	 * @param cid
+	 * @param title
+	 * @return
+	 */
+	public Pager<Answer> find(Integer uid,Integer qid);
+	/**
+	 * The condition is retrieved by a condition that is retrieved in the title, content, and summary
+	 * @param con
+	 * @return
+	 */
+	public Pager<Answer> searchAnswer(String con);
+	/**
+	 * To retrieve a column's recommendation, if cid is empty, it means to retrieve all the articles
+	 * @param ci
+	 * @return
+	 */
+	public Pager<Answer> findChosenAnswer(Integer qi);
+	/**
+	 * Get the articles in this column according to the number of articles and column
+	 * @param cid
+	 * @param num
+	 * @return
+	 */
+	public List<Answer> listAnswerByQuestionAndNumber(int qid,int num);
+	
+	public List<Answer> listAnswersByQuestion(int qid);
+
+	/**
+	 * Get the latest available articles in a column
+	 * @param cid
+	 * @return
+	 */
+	public Answer loadLastedAnswerByQuestion(int qid);
+}

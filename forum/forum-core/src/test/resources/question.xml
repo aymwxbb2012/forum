@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+<t_question id="1" title="how to solve jlk?" keyword="aa|aaa" status="1" recommend="1" 
+content="sgsfgfsagsfewt" publish_date="2017-09-01" create_date="2017-09-01" uid="1" 
+author="Administrator" cid="7" coins="50" />
+<t_question id="2" title="how to solve xgf?" keyword="ef" status="1" recommend="1" 
+content="sgsfgfsagsfewt" publish_date="2017-09-01" create_date="2017-09-01" uid="1" 
+author="Administrator" cid="7" coins="50" />
+<t_question id="3" title="how to solve xcv?" keyword="ef|efg|aaa" status="1" recommend="1" 
+content="sgsfgfsagsfewt" publish_date="2017-09-01" create_date="2017-09-01" uid="1" 
+author="Administrator" cid="7"  coins="50"/>
+<t_question id="4" title="how to solve vb?" keyword="cd" status="1" recommend="1" 
+content="sgsfgfsagsfewt" publish_date="2017-09-01" create_date="2017-09-01" uid="2" 
+author="Publisher" cid="8"  coins="50"/>
+<t_question id="5" title="how to solve sfg?" keyword="fg" status="1" recommend="1" 
+content="sgsfgfsagsfewt" publish_date="2017-09-01" create_date="2017-09-01" uid="2" 
+author="Publisher" cid="8" coins="50"/>
+<t_question id="6" title="how to solve gdf?" keyword="bc|bbb|aa" status="1" recommend="1" 
+content="sgsfgfsagsfewt" publish_date="2017-09-01" create_date="2017-09-01" uid="2" 
+author="Publisher" cid="8" coins="50"/>
+
+<t_answer id="1"  chosen="1" content="sgsfgfsagsfewt" create_date="2017-09-01" uid="2"
+ author="Publisher" qid="1" />
+ <t_answer id="2"  chosen="0" content="sgsfdfgagsfewt" create_date="2017-09-01" uid="2"
+ author="Publisher" qid="1" />
+ <t_answer id="3"  chosen="0" content="sgsfgioagsfewt" create_date="2017-09-01" uid="2"
+ author="Publisher" qid="1" />
+ <t_answer id="4"  chosen="1" content="sgsfgiogsfewt" create_date="2017-09-01" uid="2"
+ author="Publisher" qid="2" />
+ <t_answer id="5"  chosen="0" content="sgstygsfewt" create_date="2017-09-01" uid="2"
+ author="Publisher" qid="2" />
+ <t_answer id="6"  chosen="0" content="sgwragsfewt" create_date="2017-09-01" uid="2"
+ author="Publisher" qid="2" />
+
+</dataset>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=basic-hibernate/src\/main\/java&lt;cdu.xeon.basic.dao{IBaseDao.java[IBaseDao" modifiers="513" timestamp="1507436351927"/>
+<typeInfo handle="=basic-hibernate/src\/main\/java&lt;cdu.xeon.basic.dao{BaseDao.java[BaseDao" modifiers="1" timestamp="1507436352414"/>
+<typeInfo handle="=forum-question/src\/main\/java&lt;cdu.xeon.forum.service{IQuestionService.java[IQuestionService" modifiers="513" timestamp="1507445930586"/>
+<typeInfo handle="=forum-core/src\/main\/java&lt;cdu.xeon.forum.dao{IAnswerDao.java[IAnswerDao" modifiers="513" timestamp="1507541506905"/>
+<typeInfo handle="=forum-question/src\/main\/java&lt;cdu.xeon.forum.service{IAnswerService.java[IAnswerService" modifiers="513" timestamp="1507541522991"/>
+</typeInfoHistroy>

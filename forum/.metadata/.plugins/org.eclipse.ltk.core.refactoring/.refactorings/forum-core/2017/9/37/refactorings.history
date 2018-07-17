@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;cdu.xeon.forum.dao.TestCmsLinkDao&apos; to &apos;TestForumLinkDao&apos;&#x0D;&#x0A;- Original project: &apos;forum-core&apos;&#x0D;&#x0A;- Original element: &apos;cdu.xeon.forum.dao.TestCmsLinkDao&apos;&#x0D;&#x0A;- Renamed element: &apos;cdu.xeon.forum.dao.TestForumLinkDao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestCmsLinkDao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;cdu.xeon.forum.dao{TestCmsLinkDao.java[TestCmsLinkDao" matchStrategy="1" name="TestForumLinkDao" qualified="false" references="true" similarDeclarations="false" stamp="1505036496877" textual="false" version="1.0"/>
+</session>

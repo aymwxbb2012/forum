@@ -1,0 +1,8 @@
+META-INF\MANIFEST.MF
+cdu\xeon\basic\dao\IBaseDao.class
+cdu\xeon\basic\model\Pager.class
+cdu\xeon\basic\model\SystemContext.class
+cdu\xeon\forum\basic_hibernate\App.class
+cdu\xeon\basic\dao\BaseDao.class
+META-INF\maven\cdu.xeon.basic\basic-hibernate\pom.properties
+META-INF\maven\cdu.xeon.basic\basic-hibernate\pom.xml

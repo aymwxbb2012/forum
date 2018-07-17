@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cdu.xeon.basic.test.util.EntitiesHelper"/>
+<fullyQualifiedTypeName name="cdu.xeon.basic.model.User"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="org.springframework.test.annotation.Rollback"/>
+<fullyQualifiedTypeName name="cdu.xeon.basic.test.util.AbstractDbUnitTestCase"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.dao.IChannelDao"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.dao.IQuestionDao"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.dao.IUserDao"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.dao.IAnswerDao"/>
+<fullyQualifiedTypeName name="cdu.xeon.basic.model.SystemContext"/>
+<fullyQualifiedTypeName name="cdu.xeon.basic.util.FreemarkerUtil"/>
+<fullyQualifiedTypeName name="cdu.xeon.basic.util.JsonUtil"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IChannelService"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IKeywordService"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IGroupService"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IIndexService"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.auth.AuthClass"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.dto.QuestionDto"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.dto.AnswerDto"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.model.IndexQuestion"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IQuestionService"/>
+<fullyQualifiedTypeName name="cdu.xeon.basic.test.util.TestUtil"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.model.Answer"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IAnswerService"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.model.Question"/>
+<fullyQualifiedTypeName name="cdu.xeon.forum.service.IUserService"/>
+</qualifiedTypeNameHistroy>

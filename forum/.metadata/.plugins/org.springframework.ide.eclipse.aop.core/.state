@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="forum-core"/>
+<aop-project name="forum-web"/>
+<aop-project name="basic-hibernate"/>
+<aop-project name="forum-question"/>
+<aop-project name="forum-user"/>
+</aop-reference-model>

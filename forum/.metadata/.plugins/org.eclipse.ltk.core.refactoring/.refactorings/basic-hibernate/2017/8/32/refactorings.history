@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cdu.xeon.forum.dao&apos; to &apos;cdu.xeon.basic.dao&apos;&#x0D;&#x0A;- Original project: &apos;basic-hibernate&apos;&#x0D;&#x0A;- Original element: &apos;basic-hibernate/src/test/java/cdu.xeon.forum.dao&apos;&#x0D;&#x0A;- Renamed element: &apos;basic-hibernate/src/test/java/cdu.xeon.basic.dao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cdu.xeon.forum.dao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;cdu.xeon.forum.dao" name="cdu.xeon.basic.dao" qualified="false" references="true" stamp="1502419623111" textual="false" version="1.0"/>
+</session>

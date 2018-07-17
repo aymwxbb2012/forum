@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Initial import.</CommitComment>
+	<CommitComment>solved null pinter problem in AnswerDao</CommitComment>
+	<CommitComment>solved null pointer problem in AnswerDao</CommitComment>
+	<CommitComment>finished all models</CommitComment>
+	<CommitComment>finished writing tests</CommitComment>
+	<CommitComment>1</CommitComment>
+</CommitComments>

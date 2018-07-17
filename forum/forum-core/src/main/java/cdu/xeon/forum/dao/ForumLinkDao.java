@@ -1,0 +1,89 @@
+package cdu.xeon.forum.dao;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import cdu.xeon.basic.dao.BaseDao;
+import cdu.xeon.basic.model.Pager;
+import cdu.xeon.forum.model.ForumLink;
+import org.springframework.stereotype.Repository;
+
+@Repository("forumLinkDao")
+public class ForumLinkDao extends BaseDao<ForumLink> implements IForumLinkDao {
+	
+	public ForumLink add(ForumLink fl) {
+		Map<String,Integer> m = this.getMinAndMaxPos();
+		if(m.get("max")==null) {
+			fl.setPos(1);
+		} else {
+			fl.setPos(m.get("max")+1);
+		}
+		this.getSession().save(fl);
+		return fl;
+	}
+
+	
+	@Override
+	public void delete(int id) {
+		ForumLink fl = this.load(id);
+		String hql = "update ForumLink set pos=pos-1 where pos>?";
+		this.getSession().createQuery(hql).setParameter(0,fl.getPos()).executeUpdate();
+		this.getSession().delete(fl);
+	}
+
+
+	@Override
+	public Pager<ForumLink> findByType(String type) {
+		String hql = null;
+		if(type==null||"".equals(type.trim())) {
+			hql = "from ForumLink";
+		} else {
+			hql = "from ForumLink where type='"+type+"'";
+		}
+		hql+=" order by pos";
+		return this.find(hql);
+	}
+
+	@Override
+	public List<ForumLink> listByType(String type) {
+		return this.list("from ForumLink where type=? order by pos",type);
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<String> listAllType() {
+		String hql = "select type from ForumLink group by type";
+		return (List<String>)this.getSession().createQuery(hql).list();
+	}
+
+	@Override
+	public Map<String, Integer> getMinAndMaxPos() {
+		String hql = "select max(pos),min(pos) from ForumLink";
+		Object[] objs = (Object[])this.getSession().createQuery(hql).uniqueResult();
+		Map<String,Integer> m = new HashMap<String,Integer>();
+		m.put("min", (Integer)objs[1]);
+		m.put("max", (Integer)objs[0]);
+		return m;
+	}
+
+	@Override
+	public void updatePos(int id, int oldPos, int newPos) {
+		ForumLink fl = this.load(id);
+		if(oldPos==newPos) {
+			return;
+		}
+		String hql = "";
+		if(oldPos<newPos) {
+			hql = "update ForumLink set pos=pos-1 where pos>? and pos<=?";
+		} else {
+			hql = "update ForumLink set pos=pos+1 where pos<? and pos>=?";
+		}
+		this.getSession().createQuery(hql)
+			.setParameter(0, oldPos)
+			.setParameter(1, newPos).executeUpdate();
+		fl.setPos(newPos);
+		this.update(fl);
+	}
+
+}
